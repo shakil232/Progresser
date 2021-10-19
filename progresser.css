@@ -1,0 +1,26 @@
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Volkhov:wght@400;700&display=swap");
+
+/* Global */
+*{
+  padding: 0;
+  margin: 0;
+  line-height: 20px;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+body,
+input {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Volkhov", serif;
+}
