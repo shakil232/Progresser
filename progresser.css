@@ -24,3 +24,241 @@ h5,
 h6 {
   font-family: "Volkhov", serif;
 }
+
+
+.body-bg
+{
+    background: #e3edf7;
+} 
+
+/* /* HTML-AREA */
+.html-skill
+{
+    width: 160px;
+    height: 160px;
+    position: relative;
+}
+
+.html-outer
+{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7) ;
+    
+}
+
+.html-inner
+{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                -0.5px -0.5px  0px rgba(255,255,255,1),
+                0.5px 0.5px  0px rgba(0,0,0,0.15) ,
+                0px 12px 10px  -10px rgba(0,0,0,0.05) 
+                ;
+                
+}
+
+/* SVG AREA */
+circle 
+{
+    fill:none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim 2s linear forwards;
+}
+
+svg
+{
+    position:absolute;
+    top:0;
+    left: 0;
+}
+
+@keyframes anim
+{
+    100%{
+        stroke-dashoffset: 236;
+    }
+} 
+
+
+/* CSS-AREA */
+.css-skill
+{
+    width: 160px;
+    height: 160px;
+    position: relative;
+}
+
+.css-outer
+{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7) ;
+    
+}
+
+.css-inner
+{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                -0.5px -0.5px  0px rgba(255,255,255,1),
+                0.5px 0.5px  0px rgba(0,0,0,0.15) ,
+                0px 12px 10px  -10px rgba(0,0,0,0.05) 
+                ;
+                
+}
+/* CSS-SVG AREA */
+.css-circle
+{
+    fill:none;
+    stroke: url(#cssGradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim 2s linear forwards;
+}
+
+.css-svg
+{
+    position:absolute;
+    top:0;
+    left: 0;
+}
+
+@keyframes anim
+{
+    100%{
+        stroke-dashoffset: 94;
+    }
+} 
+
+
+/* BOOTSTRAP-AREA */
+.bootstrap-skill
+{
+    width: 160px;
+    height: 160px;
+    position: relative;
+}
+
+.bootstrap-outer
+{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7) ;
+    
+}
+
+.bootstrap-inner
+{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                -0.5px -0.5px  0px rgba(255,255,255,1),
+                0.5px 0.5px  0px rgba(0,0,0,0.15) ,
+                0px 12px 10px  -10px rgba(0,0,0,0.05) 
+                ;
+                
+}
+/* BOOTSTRAP-SVG AREA */
+.bootstrap-circle
+{
+    fill:none;
+    stroke: url(#bootstrapGradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim 2s linear forwards;
+}
+
+.bootstrap-svg
+{
+    position:absolute;
+    top:0;
+    left: 0;
+}
+
+@keyframes anim
+{
+    100%{
+        stroke-dashoffset: 70;
+    }
+} 
+
+
+/* JAVASCRIPT-AREA */
+.javascript-skill
+{
+    width: 160px;
+    height: 160px;
+    position: relative;
+}
+
+.javascript-outer
+{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7) ;
+    
+}
+
+.javascript-inner
+{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                -0.5px -0.5px  0px rgba(255,255,255,1),
+                0.5px 0.5px  0px rgba(0,0,0,0.15) ,
+                0px 12px 10px  -10px rgba(0,0,0,0.05) 
+                ;
+                
+}
+/* JAVASCRIPT-SVG AREA */
+.javascript-circle
+{
+    fill:none;
+    stroke: url(#javascriptGradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim 2s linear forwards;
+}
+
+.javascript-svg
+{
+    position:absolute;
+    top:0;
+    left: 0;
+}
+
+@keyframes anim
+{
+    100%{
+        stroke-dashoffset: 165;
+    }
+} 
