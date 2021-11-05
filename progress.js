@@ -53,7 +53,6 @@ setInterval(() => {
 
 
 // PROGRESS COUNTER ANIMATION-JS
-
 const counters = document.querySelectorAll('.counter-number');
 const countSpeed = 200;
 
@@ -73,3 +72,70 @@ counters.forEach(counter => {
     }
     updateCount()
 });
+
+
+// BOOTSTRAP & CUSTOMS PROGRESS BAR 
+const ProgressBar = $('.progress-bar');
+const ProgressNumber = 0 ;
+
+setInterval(function() {
+    ProgressNumber++;
+    ProgressBar.css('width', ProgressNumber + '%');
+    ProgressBar.attr('aria-valuenow' , ProgressNumber);
+}, 500);
+
+// const ProgressBar = $('.progress-bar');
+// const ProgressNumber = 0 ;
+
+// setInterval(function() {
+//     ProgressNumber++;
+//     ProgressBar.css('width', ProgressNumber + '%');
+//     ProgressBar.attr('aria-valuenow' , ProgressNumber);
+// }, 500);
+
+
+
+/* STEP PROGRESS BAR  */
+const Progress = document.getElementById("stepProgress");
+const Prev = document.getElementById("prev");
+const Next = document.getElementById("next");
+const Circles = document.querySelectorAll(".circle");
+
+let currentActive = 1;
+Next.addEventListener("click", () => {
+    currentActive++;
+    if(currentActive > Circles.length){
+        currentActive = Circles.length;
+    }
+    update();
+});
+Prev.addEventListener("click", () => {
+    currentActive--;
+    if(currentActive < 1){
+        currentActive = 1;
+    }
+    update();
+});
+function  update() {
+    Circles.forEach((circle, idx)=>{
+    if(idx < currentActive){
+        circle.classList.add('active');
+    }
+    else{
+        circle.classList.remove('active');
+    }
+    });
+    const actives = document.querySelectorAll('active');
+    Progress.style.width = ( (actives.length - 1 ) / (Circles.length - 1)) * 100 + "%";
+    
+    if ( currentActive === 1){
+        Prev.disabled = true;
+    }
+    else if ( currentActive === Circles.length){
+        Next.disabled = true;
+    }
+    else{
+        Prev.disabled = false;
+        Next.disabled = false;
+    }
+};

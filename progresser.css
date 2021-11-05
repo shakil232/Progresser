@@ -262,3 +262,93 @@ svg
         stroke-dashoffset: 165;
     }
 } 
+
+
+.progress
+{
+    background-color: rgb(180, 168, 168) !important;
+    border-radius: 7px !important;
+    height: 20px !important; 
+}
+.progress-bar
+{
+    background-image: linear-gradient(to right , #ef629f,#cc2b5e,  #ba5370,#7b4397);
+}
+
+
+
+/* STEP PROGRESS BAR  */
+:root
+{
+  --line-border-fill: #9c27b0;
+  --line-border-empty: #b2bec3;
+
+}
+.progress-container
+{
+  position: relative;
+  max-width: 100%;
+}
+.progress-container::before
+{
+  content: "";   
+  background-color: var(--line-border-empty);
+  position:absolute;
+  top: 27%;
+  left:0;
+  transform: translate(-50);
+  height: 10px;
+  width: 100%;
+  z-index: -1;
+  transition: 0.4 ease;
+}
+.step-progress
+{ 
+  background-color: var(--line-border-fill);
+  position:absolute;
+  top: 27%;
+  left:0;
+  transform: translate(-50);
+  height: 10px;
+  width: 0%;
+  z-index: -1;
+  transition: 0.4 ease;
+}
+.circle
+{
+  background-color: white;
+  color: dimgrey;  
+  border-radius: 50%;
+  height: 15%;
+  width: 8%;
+  border: 8px solid #b2bec3;
+  transition: 0.4 ease;
+}
+.circle.active
+{
+   border-color: var(--line-border-fill);
+}
+.buttons 
+{
+  background-color: var(--line-border-fill);
+  color: white;
+  border-radius: 6px;
+  border: none;
+  font-size: 17px;
+  font-family: inherit;
+  cursor: pointer;
+  padding: 12px 30px;
+  margin: 5px;
+}
+.buttons:focus{ 
+  outline: none;
+}
+.buttons:active
+{
+  transform: scale(0.97);
+}
+.buttons:disabled{
+  background-color: var(--line-border-empty);
+  cursor:not-allowed;  
+}
+ 
